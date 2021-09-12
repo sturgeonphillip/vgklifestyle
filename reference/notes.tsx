@@ -4,6 +4,35 @@
 // finally, smallest is one card that makes it look like an instagram feed
 
 // They're all just cards of differing portions that link to an article or story from a social media account post. Which means For each card there are the same repeatable properties (modular components--build 1 -3 sizes).
+// article
+//   -| div='thumbnail-title-wrapper'
+//     -| div='excerpt-thumb
+//       -| a
+//       -| img
+//       -| div="thumb-overlay"
+//         -| div='entry-text'
+//           -| header='entry-header'
+//             -| time
+//              -| div='date-wrapper'
+//               -| span='month'
+//               -| span='day'
+//             -| h2='entry-title'
+//               -| a
+//                -| time
+//               -| ::after
+//           -| div='entry-content'
+//             -| div='blog-meta-item-author'
+//               -| a='/?author'
+//             -| div='blog-categories'
+//               -| a='/blog-category'
+//             -| div='entry-excerpt p-summary'
+//               -| p='title'
+
+
+
+
+
+
 
 const card: object = {
   "Article": {
@@ -51,3 +80,10 @@ const card: object = {
     
     
 }
+
+
+// 09.11.2021
+/**
+ * Format card/post file tree structure
+ *
+ */
