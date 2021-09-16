@@ -4,6 +4,10 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 const Home = () => {
+  const funny = (str: string, n: number): boolean => {
+
+    return str.length === n ? true : false;
+  }
   return (
     <>
       <main>
@@ -12,7 +16,7 @@ const Home = () => {
             Batteries Included Next.js
           </h1>
           <h2 className='text-2xl max-w-md mx-auto'>
-            A Next.js Boilerplate with TypeScript, Tailwind CSS and testing
+            A Next.js Boilerplate with TypeScript, Tailwind CSS, and testing
             suite enabled
           </h2>
         </div>

@@ -9,19 +9,23 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
+    "strictPropertyInitialization": false,
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "baseUrl":".",
+    "typeRoots" : ["./node_modules/@types", "src/types"],
     "paths": {
-      "@components":["components/*"],
-      "@styles/*": ["styles/*"],
-      "@pages/*": ["pages/*"],
-      "@hooks/*": ["hooks/*"]
+      "@/components/*":["src/components/*"],
+      "@api/*":["src/api/*"],
+      "@/styles/*":["src/styles/*"],
+      "@/pages/*":["src/pages/*"],
+      "@types/*":["src/types/*"],
+      "@/hooks/*":["hooks/*"]
 
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["src", "next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
